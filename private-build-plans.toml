@@ -1,57 +1,86 @@
+[collectPlans.iosevka-custom]
+from = ["McIosevka"]
+
 [buildPlans.McIosevka]
 family = "McIosevka"
-spacing = "fontconfig-mono"
+spacing = "normal"
 serifs = "sans"
-no-cv-ss = false
-
-[buildPlans.McIosevka.variants]
-inherits = "ss20"
+no-cv-ss = true
+no-ligation = true
 
 [buildPlans.McIosevka.variants.design]
+capital-a = "straight-serifless"
 capital-g = "toothless-corner-inward-serifed-capped"
-capital-i = "short-serifed"
+capital-h = "serifless"
+capital-i = "serifed"
+capital-j = "serifed"
+capital-k = "symmetric-connected-serifless"
+capital-m = "slanted-sides-hanging"
 capital-n = "standard"
-capital-q = "crossing"
-a = "double-storey"
+capital-p = "open"
+capital-q = "crossing-curly-tailed"
+capital-r = "straight-open"
+capital-s = "unilateral-inward-serifed"
+capital-t = "serifless"
+capital-u = "toothless-corner"
+capital-v = "straight"
+capital-w = "straight"
+capital-x = "curly-serifless"
+capital-y = "curly-serifless"
+capital-z = "curly-serifless"
+a = "single-storey-earless-corner-tailed"
 b = "toothless-corner"
+c = "unilateral-inward-serifed"
 d = "toothless-corner-serifless"
 e = "flat-crossbar"
 f = "flat-hook"
-g = "double-storey-open"
+g = "single-storey-earless-corner-flat-hook"
 h = "straight"
 i = "serifed-diagonal-tailed"
 j = "diagonal-tailed-serifed"
+k = "curly-serifless"
 l = "serifed-diagonal-tailed"
-m = "earless-rounded-double-arch-short-leg"
-n = "earless-rounded-straight"
-p = "earless-rounded"
-q = "earless-rounded-diagonal-tailed"
+m = "earless-corner-double-arch-short-leg-tailed"
+n = "earless-corner-tailed"
+p = "earless-corner"
+q = "earless-corner-diagonal-tailed"
 r = "earless-corner"
-t = "diagonal-tailed-short-neck"
-u = "toothless-corner"
+s = "bilateral-inward-serifed"
+t = "diagonal-tailed-short-neck2"
+u = "toothless-corner-motion-serifed"
 v = "curly"
-y = "cursive-flat-hook"
+w = "cursive-motion-serifed"
+x = "curly-serifless"
+y = "curly-turn"
+z = "curly-serifless"
+long-s = "bent-hook-tailed"
 zero = "slashed"
 two = "straight-neck"
-three = "flattop"
+three = "flat-top"
 four = "open-non-crossing"
 five = "oblique-upper-left-bar"
-six = "straight-bar"
-seven = "curly-serifless"
+seven = "curly-serifed"
 eight = "two-circles"
 nine = "straight-bar"
-asterisk = "penta-low"
-underscore = "above-baseline"
+tilde = "low"
+asterisk = "turn-hex-low"
+underscore = "low"
+paragraph-sign = "high"
 caret = "medium"
 paren = "flat-arc"
+brace = "curly-flat-boundary"
 number-sign = "upright"
 ampersand = "closed"
 at = "threefold"
-dollar = "interrupted-cap"
-cent = "bar-interrupted"
+dollar = "through-cap"
+cent = "through"
 percent = "rings-segmented-slash"
 lig-ltgteq = "slanted"
+ascii-single-quote = "straight"
+ascii-grave = "straight"
 question = "corner-flat-hooked"
+punctuation-dot = "round"
+
 
 [buildPlans.McIosevka.ligations]
 enables = [
@@ -63,6 +92,9 @@ enables = [
     "ltgt-diamond",             # Enable ligation for <> as diamond.
     "brst",                     # Center asterisk in (* and *)
     "kern-dotty",               # Move connecting dotty punctuations closer, like for ::, ::: and ...
+    "kern-bars",                # Move consecutive bars closer, like for ||, ||| and //
+    "llggeq",                   # Enable ligation for <<=, >>= as shift operator
+    "dot-as-operator",          # Treat dot (.) as operator and perform chained centering
     "html-comment",             # Enable ligation for <!-- and <!---
     "brace-bar",                # Enable ligation for {| and |}
     "brack-bar",                # Enable ligation for [| and |]
@@ -70,42 +102,26 @@ enables = [
     "connected-tilde-as-wave"   # Make contiguous ASCII tildes (like ~~) connected as a wave line
 ]
 
-# [buildPlans.McIosevka.widths.condensed]
-# shape = 434
-# menu = 3
-# css = "condensed"
-
-[buildPlans.McIosevka.widths.normal]
-shape = 500
-menu = 5
-css = "normal"
+[buildPlans.McIosevka.variants.italic]
+capital-g = "toothless-corner-serifless-hooked"
+capital-k = "curly-serifless"
+capital-q = "crossing"
+capital-r = "standing-open"
+capital-u = "toothless-corner"
+f = "flat-hook-diagonal-tailed"
+g = "earless-corner"
 
 [buildPlans.McIosevka.weights.thin]
 shape = 100
-menu  = 100
-css   = 100
-
-[buildPlans.McIosevka.weights.light]
-shape = 250
-menu  = 300
-css   = 250
+menu = 100
+css = 100
 
 [buildPlans.McIosevka.weights.regular]
 shape = 400
-menu  = 400
-css   = 400
-
-[buildPlans.McIosevka.weights.medium]
-shape = 550
-menu  = 500
-css   = 550
+menu = 400
+css = 400
 
 [buildPlans.McIosevka.weights.bold]
 shape = 700
-menu  = 700
-css   = 700
-
-[buildPlans.McIosevka.weights.heavy]
-shape = 850
-menu  = 900
-css   = 850
+menu = 700
+css = 700
