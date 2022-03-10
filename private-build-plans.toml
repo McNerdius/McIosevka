@@ -1,5 +1,4 @@
-[collectPlans.iosevka-custom]
-from = ["McIosevka"]
+# https://github.com/be5invis/Iosevka/blob/master/doc/custom-build.md
 
 [buildPlans.McIosevka]
 family = "McIosevka"
@@ -9,83 +8,106 @@ no-cv-ss = true
 no-ligation = true
 
 [buildPlans.McIosevka.variants.design]
+
+# ABCDEFGHIJKLMNOPQRSTUVWXYZ
 capital-a = "straight-serifless"
-capital-g = "toothless-corner-inward-serifed-capped"
-capital-h = "serifless"
-capital-i = "serifed"
+capital-b = "standard-interrupted-serifless"
+capital-c = "bilateral-inward-serifed"
+capital-d = "standard-serifless"
+capital-e = "serifless"
+capital-f = "serifless"
+capital-g = "toothless-corner-inward-serifed-hooked"
+capital-h = "serifless"                
+capital-i = "short-serifed"
 capital-j = "serifed"
-capital-k = "symmetric-connected-serifless"
-capital-m = "slanted-sides-hanging"
+capital-k = "curly-serifless"
+capital-l = "serifless"
+capital-m = "hanging"
 capital-n = "standard"
+# capital-o = no options (yet)
 capital-p = "open"
-capital-q = "crossing-curly-tailed"
-capital-r = "straight-open"
-capital-s = "unilateral-inward-serifed"
+capital-q = "crossing"
+capital-r = "curly-open"
+capital-s = "bilateral-inward-serifed"
 capital-t = "serifless"
 capital-u = "toothless-corner"
 capital-v = "straight"
 capital-w = "straight"
 capital-x = "curly-serifless"
 capital-y = "curly-serifless"
-capital-z = "curly-serifless"
-a = "double-storey-toothless-corner"
+capital-z = "curly-serifed"
+
+# abcdefghijklmnopqrstuvwxyz
+
+# a = "double-storey-toothless-corner"
+a = "single-storey-earless-corner-tailed"
 b = "toothless-corner"
-c = "unilateral-inward-serifed"
+c = "bilateral-inward-serifed"
 d = "toothless-corner-serifless"
-e = "rounded"
+e = "flat-crossbar"
 f = "flat-hook"
-g = "earless-corner"
+g = "double-storey-open"
 h = "straight"
-i = "serifed-diagonal-tailed"
-j = "diagonal-tailed-serifed"
+i = "zshaped"
+j = "flat-hook-serifed"
 k = "curly-serifless"
-l = "serifed-diagonal-tailed"
-m = "earless-corner-double-arch-short-leg-tailed"
-n = "earless-corner-tailed"
+l = "zshaped"
+m = "earless-corner-double-arch-short-leg"
+n = "earless-corner-straight"
+# o = no options (yet)
 p = "earless-corner"
-q = "earless-corner-diagonal-tailed"
+q = "earless-corner"
 r = "earless-corner"
 s = "bilateral-inward-serifed"
-t = "diagonal-tailed-short-neck2"
-u = "toothless-corner-motion-serifed"
-v = "curly"
-w = "straight-asymmetric"
+t = "flat-hook"
+u = "toothless-corner"
+v = "straight"
+w = "straight"   
 x = "curly-serifless"
 y = "curly-turn"
-z = "curly-serifless"
-long-s = "bent-hook-tailed"
-zero = "slashed"
-two = "straight-neck"
+z = "curly-serifed"
+
+# 0123456789
+zero = "reverse-slashed-split"
+one = "no-base"
+two = "straight-neck"   
 three = "flat-top"
 four = "open-non-crossing"
 five = "oblique-upper-left-bar"
-seven = "curly-serifed"
+six = "straight-bar"   
+seven = "bend-serifless" 
 eight = "two-circles"
 nine = "straight-bar"
-tilde = "low"
-asterisk = "turn-hex-low"
-underscore = "low"
-paragraph-sign = "high"
+
+# ~*_¶^(){}#&@$¢%|
+
+tilde = "low"  
+asterisk = "hex-low"
+underscore = "low"  
+pilcrow = "high"
 caret = "medium"
 paren = "flat-arc"
 brace = "curly-flat-boundary"
 number-sign = "upright"
 ampersand = "closed"
-at = "threefold"
-dollar = "through-cap"
-cent = "through"
+at = "fourfold-solid-inner"    
+dollar = "interrupted"
+cent = "through"  
 percent = "rings-segmented-slash"
-lig-ltgteq = "slanted"
+bar = "force-upright"
+
+lig-ltgteq = "slanted" # <= & >= 
 ascii-single-quote = "straight"
 ascii-grave = "straight"
-question = "corner-flat-hooked"
+question = "corner" # ?
 punctuation-dot = "round"
+diacritic-dot = "round"
 
-
-[buildPlans.McIosevka.ligations]
+[buildPlans.McIosevka.ligations] 
 enables = [
     "center-ops",               # Vertically align some of the operators (like *) to the center position it is before or after a "center" operator (like +).
     "arrow",                    # Enable ligation set that forms arrows.
+    "arrow2",                   # Enable ligation for more arrows, like >>=.
     "trig",                     # Enable ligation for <|, |> , <||, and other bar-and-angle-bracket symbols.
     "ineq",                     # Enable ligation for <= and >=
     "exeq",                     # Enable ligation for != and !==
@@ -102,19 +124,27 @@ enables = [
     "connected-tilde-as-wave"   # Make contiguous ASCII tildes (like ~~) connected as a wave line
 ]
 
-[buildPlans.McIosevka.variants.italic]
-capital-g = "toothless-corner-serifless-hooked"
-capital-k = "curly-serifless"
-capital-q = "crossing"
-capital-r = "standing-open"
-capital-u = "toothless-corner"
-f = "flat-hook-diagonal-tailed"
-g = "earless-corner"
+[buildPlans.McIosevka.widths.normal]
+shape = 475
+menu = 5
+css = "normal"
+
+[buildPlans.McIosevka.slopes.upright]
+angle = 0
+shape = "upright"
+menu = "upright"
+css = "normal"
+
+[buildPlans.McIosevka.slopes.italic]
+angle = 9.4
+shape = "italic"
+menu = "italic"
+css = "italic"
 
 [buildPlans.McIosevka.weights.thin]
-shape = 100
-menu = 100
-css = 100
+shape = 200
+menu = 200
+css = 200
 
 [buildPlans.McIosevka.weights.regular]
 shape = 400

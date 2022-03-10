@@ -2,71 +2,19 @@
 @font-face {
 	font-family: 'McIosevka Web';
 	font-display: swap;
-	font-weight: 100;
+	font-weight: 200;
 	font-stretch: normal;
 	font-style: normal;
-	src: url('woff2/McIosevka-thin.woff2') format('woff2'), url('ttf/McIosevka-thin.ttf') format('truetype');
+	src: url('ttf/McIosevka-thin.ttf') format('truetype'), url('woff2/McIosevka-thin.woff2') format('woff2');
 }
 
 @font-face {
 	font-family: 'McIosevka Web';
 	font-display: swap;
-	font-weight: 100;
-	font-stretch: expanded;
-	font-style: normal;
-	src: url('woff2/McIosevka-extendedthin.woff2') format('woff2'), url('ttf/McIosevka-extendedthin.ttf') format('truetype');
-}
-
-@font-face {
-	font-family: 'McIosevka Web';
-	font-display: swap;
-	font-weight: 100;
-	font-stretch: normal;
-	font-style: oblique;
-	src: url('woff2/McIosevka-thinoblique.woff2') format('woff2'), url('ttf/McIosevka-thinoblique.ttf') format('truetype');
-}
-
-@font-face {
-	font-family: 'McIosevka Web Oblique';
-	font-display: swap;
-	font-weight: 100;
-	font-stretch: normal;
-	src: url('woff2/McIosevka-thinoblique.woff2') format('woff2'), url('ttf/McIosevka-thinoblique.ttf') format('truetype');
-}
-
-@font-face {
-	font-family: 'McIosevka Web';
-	font-display: swap;
-	font-weight: 100;
-	font-stretch: expanded;
-	font-style: oblique;
-	src: url('woff2/McIosevka-extendedthinoblique.woff2') format('woff2'), url('ttf/McIosevka-extendedthinoblique.ttf') format('truetype');
-}
-
-@font-face {
-	font-family: 'McIosevka Web Oblique';
-	font-display: swap;
-	font-weight: 100;
-	font-stretch: expanded;
-	src: url('woff2/McIosevka-extendedthinoblique.woff2') format('woff2'), url('ttf/McIosevka-extendedthinoblique.ttf') format('truetype');
-}
-
-@font-face {
-	font-family: 'McIosevka Web';
-	font-display: swap;
-	font-weight: 100;
+	font-weight: 200;
 	font-stretch: normal;
 	font-style: italic;
-	src: url('woff2/McIosevka-thinitalic.woff2') format('woff2'), url('ttf/McIosevka-thinitalic.ttf') format('truetype');
-}
-
-@font-face {
-	font-family: 'McIosevka Web';
-	font-display: swap;
-	font-weight: 100;
-	font-stretch: expanded;
-	font-style: italic;
-	src: url('woff2/McIosevka-extendedthinitalic.woff2') format('woff2'), url('ttf/McIosevka-extendedthinitalic.ttf') format('truetype');
+	src: url('ttf/McIosevka-thinitalic.ttf') format('truetype'), url('woff2/McIosevka-thinitalic.woff2') format('woff2');
 }
 
 @font-face {
@@ -75,50 +23,7 @@
 	font-weight: 400;
 	font-stretch: normal;
 	font-style: normal;
-	src: url('woff2/McIosevka-regular.woff2') format('woff2'), url('ttf/McIosevka-regular.ttf') format('truetype');
-}
-
-@font-face {
-	font-family: 'McIosevka Web';
-	font-display: swap;
-	font-weight: 400;
-	font-stretch: expanded;
-	font-style: normal;
-	src: url('woff2/McIosevka-extended.woff2') format('woff2'), url('ttf/McIosevka-extended.ttf') format('truetype');
-}
-
-@font-face {
-	font-family: 'McIosevka Web';
-	font-display: swap;
-	font-weight: 400;
-	font-stretch: normal;
-	font-style: oblique;
-	src: url('woff2/McIosevka-oblique.woff2') format('woff2'), url('ttf/McIosevka-oblique.ttf') format('truetype');
-}
-
-@font-face {
-	font-family: 'McIosevka Web Oblique';
-	font-display: swap;
-	font-weight: 400;
-	font-stretch: normal;
-	src: url('woff2/McIosevka-oblique.woff2') format('woff2'), url('ttf/McIosevka-oblique.ttf') format('truetype');
-}
-
-@font-face {
-	font-family: 'McIosevka Web';
-	font-display: swap;
-	font-weight: 400;
-	font-stretch: expanded;
-	font-style: oblique;
-	src: url('woff2/McIosevka-extendedoblique.woff2') format('woff2'), url('ttf/McIosevka-extendedoblique.ttf') format('truetype');
-}
-
-@font-face {
-	font-family: 'McIosevka Web Oblique';
-	font-display: swap;
-	font-weight: 400;
-	font-stretch: expanded;
-	src: url('woff2/McIosevka-extendedoblique.woff2') format('woff2'), url('ttf/McIosevka-extendedoblique.ttf') format('truetype');
+	src: url('ttf/McIosevka-regular.ttf') format('truetype'), url('woff2/McIosevka-regular.woff2') format('woff2');
 }
 
 @font-face {
@@ -127,16 +32,7 @@
 	font-weight: 400;
 	font-stretch: normal;
 	font-style: italic;
-	src: url('woff2/McIosevka-italic.woff2') format('woff2'), url('ttf/McIosevka-italic.ttf') format('truetype');
-}
-
-@font-face {
-	font-family: 'McIosevka Web';
-	font-display: swap;
-	font-weight: 400;
-	font-stretch: expanded;
-	font-style: italic;
-	src: url('woff2/McIosevka-extendeditalic.woff2') format('woff2'), url('ttf/McIosevka-extendeditalic.ttf') format('truetype');
+	src: url('ttf/McIosevka-italic.ttf') format('truetype'), url('woff2/McIosevka-italic.woff2') format('woff2');
 }
 
 @font-face {
@@ -145,50 +41,7 @@
 	font-weight: 700;
 	font-stretch: normal;
 	font-style: normal;
-	src: url('woff2/McIosevka-bold.woff2') format('woff2'), url('ttf/McIosevka-bold.ttf') format('truetype');
-}
-
-@font-face {
-	font-family: 'McIosevka Web';
-	font-display: swap;
-	font-weight: 700;
-	font-stretch: expanded;
-	font-style: normal;
-	src: url('woff2/McIosevka-extendedbold.woff2') format('woff2'), url('ttf/McIosevka-extendedbold.ttf') format('truetype');
-}
-
-@font-face {
-	font-family: 'McIosevka Web';
-	font-display: swap;
-	font-weight: 700;
-	font-stretch: normal;
-	font-style: oblique;
-	src: url('woff2/McIosevka-boldoblique.woff2') format('woff2'), url('ttf/McIosevka-boldoblique.ttf') format('truetype');
-}
-
-@font-face {
-	font-family: 'McIosevka Web Oblique';
-	font-display: swap;
-	font-weight: 700;
-	font-stretch: normal;
-	src: url('woff2/McIosevka-boldoblique.woff2') format('woff2'), url('ttf/McIosevka-boldoblique.ttf') format('truetype');
-}
-
-@font-face {
-	font-family: 'McIosevka Web';
-	font-display: swap;
-	font-weight: 700;
-	font-stretch: expanded;
-	font-style: oblique;
-	src: url('woff2/McIosevka-extendedboldoblique.woff2') format('woff2'), url('ttf/McIosevka-extendedboldoblique.ttf') format('truetype');
-}
-
-@font-face {
-	font-family: 'McIosevka Web Oblique';
-	font-display: swap;
-	font-weight: 700;
-	font-stretch: expanded;
-	src: url('woff2/McIosevka-extendedboldoblique.woff2') format('woff2'), url('ttf/McIosevka-extendedboldoblique.ttf') format('truetype');
+	src: url('ttf/McIosevka-bold.ttf') format('truetype'), url('woff2/McIosevka-bold.woff2') format('woff2');
 }
 
 @font-face {
@@ -197,14 +50,5 @@
 	font-weight: 700;
 	font-stretch: normal;
 	font-style: italic;
-	src: url('woff2/McIosevka-bolditalic.woff2') format('woff2'), url('ttf/McIosevka-bolditalic.ttf') format('truetype');
-}
-
-@font-face {
-	font-family: 'McIosevka Web';
-	font-display: swap;
-	font-weight: 700;
-	font-stretch: expanded;
-	font-style: italic;
-	src: url('woff2/McIosevka-extendedbolditalic.woff2') format('woff2'), url('ttf/McIosevka-extendedbolditalic.ttf') format('truetype');
+	src: url('ttf/McIosevka-bolditalic.ttf') format('truetype'), url('woff2/McIosevka-bolditalic.woff2') format('woff2');
 }
